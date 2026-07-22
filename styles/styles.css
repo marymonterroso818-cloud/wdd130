@@ -2,9 +2,15 @@
   --border: 1px solid rgb(0 0 0 / .2);
 }
 
-.grid {
-  display: grid;
-  align-items: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: Roboto, Arial, sans-serif;
 }
 
 header,
@@ -14,28 +20,9 @@ footer {
   margin: 0 auto;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-div {
-  display: block;
-}
-
 nav {
-  display: block;
-}
-
-body {
-  font-size: 16px;
-  font-family: Roboto, Arial, sans-serif;
-}
-
-nav {
-  background-color: darkblue;
-  padding: 10px;
+  background-color: steelblue;
+  padding: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -44,16 +31,25 @@ nav {
 nav a {
   color: white;
   display: block;
-  padding: 20px;
+  padding: 0.5rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+}
+
+main {
+  grid-column: 2/3;
+  margin: 1rem;
 }
 
 h1 {
   color: darkblue;
   padding: .5rem;
-}
-
-main {
-  max-width: 640px;
 }
 
 main img {
@@ -73,6 +69,9 @@ p {
 
 aside {
   width: 20rem;
+  position: relative;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
   margin: 1rem;
   border: var(--border);
   padding: 1rem;
@@ -88,8 +87,12 @@ aside img {
 
 aside h2 {
   position: absolute;
-  top: 555px;
-  left: 132px;
+  top: 45px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 3px black;
 }
 
 footer {
