@@ -2,6 +2,18 @@
   --border: 1px solid rgb(0 0 0 / .2);
 }
 
+header,
+.grid,
+footer {
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -16,6 +28,9 @@ body {
 nav {
   background-color: darkblue;
   padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 nav a {
