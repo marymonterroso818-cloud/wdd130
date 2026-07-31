@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Mountain Rapids Rafting</title>
+  <meta name="description"
+    content="Contact Mountain Rapids Rafting with questions about reservations, rafting trips, and company services.">
+  <meta name="author" content="Mary Monterroso">
+  <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+  <header>
+    <img src="images/z-excitingexpedition.jpg" alt="company logo">
+    <nav>
+      <ul class="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Mountain Rapids Rafting</h1>
+
+    <section class="company-info">
+
+      <p>
+        <strong>Address:</strong><br>
+        2480 S Hwy 191,<br>
+        Moab, Utah 84532
+      </p>
+
+      <p>
+        <strong>Phone:</strong>
+        <a href="tel:+14355550123">(435) 555-0123</a>
+      </p>
+
+      <p>
+        <strong>Email:</strong>
+        <a href="mailto:info@mountainrapids.com">
+          info@mountainrapids.com
+        </a>
+      </p>
+    </section>
+    <section class="contact-grid">
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d10497.523598742226!2d-109.51762941073252!3d38.53532553638369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s125%20Little%20Canyon%20Road%2C%20Moab%2C%20Utah%2084532!5e0!3m2!1sen!2sus!4v1785471009300!5m2!1sen!2sus"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          title="Map showing the location of Mountain Rapids Rafting">
+        </iframe>
+      </div>
+
+      <div class="contact-form-container">
+        <h2>Send Us a Message</h2>
+
+        <form class="contact-form">
+          <div class="form-item">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" required>
+          </div>
+
+          <div class="form-item">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div class="purpose-row">
+            <p>Message Purpose</p>
+
+            <fieldset>
+              <legend>Purpose of Your Message</legend>
+
+              <div class="radio-option">
+                <input type="radio" id="general" name="message-purpose" value="general-inquiry"
+                  required>
+                <label for="general">General Inquiry</label>
+              </div>
+
+              <div class="radio-option">
+                <input type="radio" id="reservation" name="message-purpose"
+                  value="reservation-question">
+                <label for="reservation">Reservation Question</label>
+              </div>
+
+              <div class="radio-option">
+                <input type="radio" id="suggestion" name="message-purpose"
+                  value="website-suggestion">
+                <label for="suggestion">Website Suggestion</label>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="form-item message-item">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Type here"
+              required></textarea>
+          </div>
+
+          <div class="newsletter-option">
+            <input type="checkbox" id="newsletter" name="newsletter">
+            <label for="newsletter">
+              Please subscribe me to the monthly newsletter
+            </label>
+          </div>
+
+          <button type="submit">Get in Touch!</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="employees">
+      <h2>We Are Here to Serve You</h2>
+
+      <div class="employee-profiles">
+        <figure>
+          <img src="images/sarah-johnson.jpg" alt="Sarah Johnson, General Manager">
+          <figcaption>Sarah Johnson — General Manager</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/daniel-martinez.jpg" alt="Daniel Martinez, Lead River Guide">
+          <figcaption>Daniel Martinez — Lead River Guide</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/emily-carter.jpg" alt="Emily Carter, Reservation Specialist">
+          <figcaption>Emily Carter — Reservation Specialist</figcaption>
+        </figure>
+      </div>
+    </section>
+
+
+  </main>
+  <footer>
+    <p>
+      &copy; 2026 Mountain Rapids Rafting | Mary Monterroso
+    </p>
+
+    <nav class="socialmedia">
+      <a href="https://www.facebook.com">
+        <img src="images/facebook.svg" alt="Facebook Icon Image" width="50">
+      </a>
+
+      <a href="https://www.instagram.com">
+        <img src="images/instagram.svg" alt="Instagram Icon Image" width="50">
+      </a>
+
+      <a href="https://www.youtube.com">
+        <img src="images/youtube-square.svg" alt="Youtube Icon Image" width="50">
+      </a>
+    </nav>
+  </footer>
+
+</body>
+
+</html>
